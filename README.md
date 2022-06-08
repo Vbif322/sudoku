@@ -1,2 +1,2 @@
 # sudoku
-Bot which solve sudoku
+React app to solve sudoku
