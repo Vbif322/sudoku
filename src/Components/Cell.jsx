@@ -16,7 +16,7 @@ let Arr = [
 function Cell() {
   return (
     <div className='Cell'>
-        <input className='CellInput'></input>
+        <input {...Array(80).map((value, index, Arr) => {value === -1 ? "": Arr[value]})} className='CellInput'></input>
     </div>
   )
 }
