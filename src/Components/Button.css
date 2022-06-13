@@ -1,0 +1,17 @@
+.sendButton{
+    padding-top: 50px;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sendButton button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px; 
+    font-size: large;
+    background-color: wheat;
+    cursor: pointer;
+    
+}

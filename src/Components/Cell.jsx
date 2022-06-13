@@ -2,19 +2,17 @@ import React from 'react'
 import './Cell.css'
 
 
-function Cell( { num, row, col, setInputNum, Arr1 } ) {
+function Cell( { num, row, col, setInputNum, Arr } ) {
     
    const onInputHandler = (event) => {
-    setInputNum(event.target.value)
-    Arr1[row][col] = Number(event.target.value)
+    setInputNum(event)
+    Arr[row][col] = Number(event.target.value)
        
    }
 
-
-
     return (
     <div className='Cell'>
-        <input onChange = {onInputHandler} defaultValue ={num} className='CellInput' />            
+        <input maxLength="1" onChange = {onInputHandler} defaultValue ={num} className='CellInput' />            
     </div>
   )
 }
