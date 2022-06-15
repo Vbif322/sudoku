@@ -3,9 +3,8 @@ import './Cell.css'
 
 
 
-function Cell( { num, row, col, setInputNum, Arr } ) {
-    let CellClass = 'CellInput'
-
+function Cell( { num, row, col, setInputNum, Arr, CellClass } ) {
+    
     /* if (Arr[row][col] === 1) {
         CellClass = 'CellInputWrong'
     } */

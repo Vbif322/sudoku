@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+
+.Board1 {
+    display: grid;
+    grid-template-columns: repeat(9, 55px);
+    grid-template-rows: repeat(9, 55px);
+    justify-content: center;
+    
+}
