@@ -1,2 +1,3 @@
 # sudoku
-Bot which solve sudoku
+
+Bot which solves sudoku!
