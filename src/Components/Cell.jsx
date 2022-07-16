@@ -1,22 +1,26 @@
 import React from 'react'
 import './Cell.css'
 
-let Arr = [
-    [-1, -1, -1, -1, -1, -1, 8, 3, -1],
-    [-1, -1, -1, -1, 2, 8, -1, -1, 5],
-    [2, -1, 4, -1, 7, -1, -1, -1, 6],
-    [9, -1, 8, -1, -1, 4, 5, -1, 1],
-    [-1, 6, -1, -1, -1, -1, 4, -1, 9],
-    [-1, -1, -1, 6, -1, -1, -1, -1, 8],
-    [6, 7, 2, -1, -1, 1, -1, 8, -1],
-    [-1, 3, -1, -1, -1, 9, -1, 5, -1],
-    [5, -1, -1, -1, -1, 7, -1, -1, -1],
-  ];
 
-function Cell() {
-  return (
+
+function Cell( { num, row, col, setInputNum, Arr, CellClass } ) {
+    
+    /* if (Arr[row][col] === 1) {
+        CellClass = 'CellInputWrong'
+    } */
+
+   const onInputHandler = (event) => {
+    setInputNum(event)
+    Arr[row][col] = Number(event.target.value)
+
+    }
+
+
+    
+
+    return (
     <div className='Cell'>
-        <input className='CellInput'></input>
+        <input maxLength="1" onChange = {onInputHandler} defaultValue ={num} className={CellClass} />            
     </div>
   )
 }

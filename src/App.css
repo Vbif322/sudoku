@@ -5,13 +5,14 @@
 .header {
     text-align: center;
     margin-top: 50px;
+
 }
-table {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+h1 {
+    margin-bottom: 50px;
 }
+
+
 .cellInput {
     width: 50px;
     height: 50px;
