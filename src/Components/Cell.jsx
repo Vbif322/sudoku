@@ -3,20 +3,14 @@ import './Cell.css'
 
 
 
-function Cell( { num, row, col, setInputNum, Arr, CellClass } ) {
+function Cell( { num, row, col, setInputNum, Data, CellClass } ) {
     
-    /* if (Arr[row][col] === 1) {
-        CellClass = 'CellInputWrong'
-    } */
 
    const onInputHandler = (event) => {
     setInputNum(event)
-    Arr[row][col] = Number(event.target.value)
+    Data[row][col] = Number(event.target.value)
 
-    }
-
-
-    
+    }    
 
     return (
     <div className='Cell'>
