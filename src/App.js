@@ -1,7 +1,8 @@
 import "./App.css";
 import React from "react";
 import Board from "./Components/Board";
-import Button from "./Components/Button"
+import Button from "./Components/Button";
+import Reset from "./Components/Reset";
 
 
 let Arr = [
@@ -17,8 +18,8 @@ let Arr = [
 ];
 
 
-function App() { 
-      
+function App() {     
+   
     const [Data, setData] = React.useState(Arr);
 
     const [, setInputNum] = React.useState(0);
@@ -26,7 +27,7 @@ function App() {
     for (let i=0;ArrToSend.length>i;i++)
         ArrToSend = ArrToSend.replace(',','');
     
-
+    
 
   return (
     <div className="container">
@@ -34,8 +35,9 @@ function App() {
         <h1>Sudoku Solver</h1>
         <Board Data={Data} ArrToSend={ArrToSend} setInputNum={setInputNum}/>        
       </div>
-      <div>
+      <div className="app__buttons">
         <Button ArrToSend={ArrToSend} Data={Data} setData={setData}/>
+        <Reset setData = {setData} Arr={Arr} Data={Data}/>
       </div>
     </div>
   );

@@ -1,16 +1,17 @@
-.sendButton{
+.resetButton{
     padding-top: 50px;
     width: 100px;
     height: 100px;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 150px;
 }
 
-.sendButton button {
+.resetButton button {
     width: 150px;
     height: 50px;
     border-radius: 15px; 
     font-size: large;
-    background-color: wheat;
+    background-color: rgb(5, 177, 5);
     cursor: pointer;
     
 }
